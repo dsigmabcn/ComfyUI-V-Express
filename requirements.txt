@@ -3,10 +3,11 @@ av
 pydub
 moviepy
 imageio-ffmpeg
-onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
 einops
 insightface
 omegaconf
 safetensors
 tqdm
 accelerate
+--extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/ 
+onnxruntime-gpu
