@@ -33,6 +33,18 @@ apt update
 apt install ffmpeg
 ```
 
+1. Clone the repo in ComfyUI with venv
+```shell
+source ComfyUI/venv/bin/activate
+cd ComfyUI
+cd custom_nodes
+git clone https://github.com/dsigmabcn/ComfyUI-V-Express.git
+cd ComfyUI-V-Express
+pip install -r requirements
+```
+
+
+
 1. Clone this repo into the Your ComfyUI root directory\ComfyUI\custom_nodes\ and install dependent Python packages from [here](https://github.com/tencent-ailab/V-Express#installation):
 
    ```shell
