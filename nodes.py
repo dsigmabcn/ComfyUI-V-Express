@@ -192,8 +192,8 @@ class V_Express_Sampler:
         insightface_model_path = model_dict['insightface_model_path']
 
         app = FaceAnalysis(
-            providers=['CUDAExecutionProvider' if DEVICE == 'cuda' else 'CPUExecutionProvider'],
-            provider_options=[{'device_id': GPU_ID}] if DEVICE == 'cuda' else [],
+            providers=['CUDAExecutionProvider'],# if DEVICE == 'cuda' else 'CPUExecutionProvider'],
+            provider_options=[{'device_id': GPU_ID}],# if DEVICE == 'cuda' else [],
             root=insightface_model_path,
         )
         app.prepare(ctx_id=0, det_size=(image_size, image_size))
@@ -457,8 +457,8 @@ class Load_Kps_Path_From_Video:
         insightface_model_path = model_dict['insightface_model_path']
 
         app = FaceAnalysis(
-            providers=['CUDAExecutionProvider' if DEVICE == 'cuda' else 'CPUExecutionProvider'],
-            provider_options=[{'device_id': GPU_ID}] if DEVICE == 'cuda' else [],
+            providers=['CUDAExecutionProvider']\,# if DEVICE == 'cuda' else 'CPUExecutionProvider'],
+            provider_options=[{'device_id': GPU_ID}],# if DEVICE == 'cuda' else [],
             root=insightface_model_path,
         )
         app.prepare(ctx_id=0, det_size=(image_size, image_size))
