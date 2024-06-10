@@ -25,6 +25,14 @@ Our method gradually enables effective control by weak conditions, thereby achie
 
 ## Installation
 
+0.
+make sure ffmpeg is worked in your commandline for Linux
+
+```shell
+apt update
+apt install ffmpeg
+```
+
 1. Clone this repo into the Your ComfyUI root directory\ComfyUI\custom_nodes\ and install dependent Python packages from [here](https://github.com/tencent-ailab/V-Express#installation):
 
    ```shell
