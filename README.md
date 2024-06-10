@@ -40,7 +40,7 @@ cd ComfyUI
 cd custom_nodes
 git clone https://github.com/dsigmabcn/ComfyUI-V-Express.git
 cd ComfyUI-V-Express
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 
